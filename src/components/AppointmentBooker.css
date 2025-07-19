@@ -1,0 +1,78 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+  background:black;
+}
+
+.appointment-container {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  background: #0a0a0a;
+  color: gold;
+}
+
+.slots-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.slot-button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  min-width: 120px;
+  transition: 0.3s;
+}
+
+.slot-button:hover{
+    background-color: #492ae7;
+}
+
+.slot-button.available {
+  background: #28a745;
+  color: white;
+}
+
+.slot-button.available:hover {
+  background: #218838;
+}
+
+.slot-button.booked {
+  background: #dc3545;
+  color: white;
+  cursor: not-allowed;
+}
+
+.date-picker {
+  margin-bottom: 15px;
+}
+
+.confirmation {
+  padding: 10px;
+  background-color: #d4edda;
+  color: #155724;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.admin-panel {
+  margin: 50px;
+  padding: 30px;
+  background-color: #3497dd;
+
+}
+
+.admin-panel input {
+  padding: 6px;
+  margin-right: 10px;
+  
+}
